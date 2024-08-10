@@ -1080,7 +1080,7 @@ class ViewNetworkHandler(BaseHandler):
                     node = {'id': i}
                     i += 1
                     node['name'] = 'switch' + '_' + network.getName
-                    # node['label'] = 'switch'
+                    node['label'] = 'net' + '_' + str(network.getNetwork)
                     node['type'] = 'switch'
                     node['network'] = network.getName
                     node['ip'] = network.getNetwork
